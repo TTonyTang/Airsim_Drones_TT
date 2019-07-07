@@ -87,7 +87,9 @@ void ASimHUD::inputEventToggleHelp()
 
 void ASimHUD::inputEventToggleTrace()
 {
-    simmode_->getVehicleSimApi()->toggleTrace();
+	//simmode_->getVehicleSimApi()->toggleTrace();
+    simmode_->getVehicleSimApi("Drone1")->toggleTrace();
+	simmode_->getVehicleSimApi("Drone2")->toggleTrace();
 }
 
 void ASimHUD::inputEventLeftDisturbance()
@@ -102,7 +104,11 @@ void ASimHUD::inputEventRightDisturbance()
 
 void ASimHUD::inputEventToggleBoundary()
 {
-    simmode_->getVehicleSimApi()->toggleBoundary();
+    //simmode_->getVehicleSimApi()->toggleBoundary();
+
+	simmode_->getVehicleSimApi("Drone1")->toggleBoundary();
+	simmode_->getVehicleSimApi("Drone2")->toggleBoundary();
+
 }
 
 ASimHUD::ImageType ASimHUD::getSubwindowCameraType(int window_index)

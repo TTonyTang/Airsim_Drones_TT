@@ -478,6 +478,7 @@ void PawnSimApi::showBoundary(float dt)
         FHitResult OutHit;
         const FVector Start = params_.pawn->GetActorLocation() - 50 * FVector::UpVector;
         const int N = 60;
+		//const int N = 120;
         const FCollisionQueryParams CollisionParams;
         //UKismetSystemLibrary::FlushPersistentDebugLines(params_.pawn->GetWorld());
         for (int i = 0; i < N; i++) {

@@ -70,6 +70,7 @@ static int _vscprintf(const char * format, va_list pargs)
 #endif
 
 // Call this on a function parameter to suppress the unused paramter warning
+//对函数参数调用此函数，以抑制未使用的参数警告
 template <class T> inline 
 void unused(T const & result) { static_cast<void>(result); }
 

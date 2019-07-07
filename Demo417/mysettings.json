@@ -1,0 +1,8 @@
+{
+  "boundaryStrategy": 3,
+  "meshStrategy": 1,
+  "bcStrategy": 1,
+  "maxDepth": 20.0,
+  "maxDist": 50.0,
+  "minGap": 2.0
+}

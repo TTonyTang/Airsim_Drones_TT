@@ -14,6 +14,7 @@ class ClockBase {
 public:
     //returns value indicating nanoseconds elapsed since some reference timepoint in history
     //typically nanoseconds from Unix epoch
+	//返回一个值，该值指示从历史上的某个参考时间点(通常从Unix纪元算起)开始经过的时间为纳秒
     virtual TTimePoint nowNanos() const = 0;
     virtual TTimePoint getStart() const = 0;
 

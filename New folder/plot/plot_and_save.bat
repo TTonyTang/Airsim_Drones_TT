@@ -1,0 +1,1 @@
+python plot.py 1 201 201
